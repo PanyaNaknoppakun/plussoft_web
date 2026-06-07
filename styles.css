@@ -256,6 +256,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .service:hover {
@@ -266,15 +267,16 @@ body {
 }
 
 .service img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+    width: calc(100% + 70px);
+    height: 180px;
+    object-fit: cover;
+    margin-top: -45px;
     margin-bottom: 25px;
     transition: var(--transition);
 }
 
 .service:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .service h3 {
